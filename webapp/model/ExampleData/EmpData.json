@@ -1,0 +1,39 @@
+{
+	"EmployeeList":[
+		{
+			"empId":101,
+			"empName":"Ramesh",
+			"company":"signiwis",
+			"job":"UI Developer",
+			"empSalary":25000,
+			"CurrencyCode":"INR"
+		},
+			{
+			"empId":102,
+			"empName":"Ram",
+				"company":"signiwis",
+			"job":"UI Developer",
+			"empSalary":10000,
+				"CurrencyCode":"INR"
+		},
+			{
+			"empId":103,
+			"empName":"Raju",
+				"company":"signiwis",
+			"job":"UI Developer",
+			"empSalary":85000,
+				"CurrencyCode":"POU"
+		},
+			{
+			"empId":104,
+			"empName":"Rajesh",
+				"company":"signiwis",
+			"job":"UI Developer",
+			"empSalary":75000,
+				"CurrencyCode":"EUR"
+		}
+		]
+		
+
+
+}

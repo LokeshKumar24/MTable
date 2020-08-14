@@ -1,0 +1,53 @@
+<mvc:View controllerName="MT.MTable.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table items="{/EmployeeList}">
+							<columns>
+								<Column>
+									<Label text="ID"></Label>
+								</Column>
+									<Column>
+									<Label text="Name"></Label>
+								</Column>
+									<Column>
+									<Label text="Company"></Label>
+								</Column>
+									<Column>
+									<Label text="Job"></Label>
+								</Column>
+								
+									<Column>
+									<Label text="Salary"></Label>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+										<cells>
+					<ObjectIdentifier
+						title="{empName}"
+						text="{empId}"/>
+						<Text text="{empName}"></Text>
+					<Text
+						text="{company}" />
+						<Text text="{job}"></Text>
+				
+					<ObjectNumber
+							number="{
+								parts:[{path:'empSalary'},{path:'CurrencyCode'}],
+								type: 'sap.ui.model.type.Currency',
+								formatOptions: {showMeasure: false}
+							}"
+							unit="{CurrencyCode}" />
+				</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
